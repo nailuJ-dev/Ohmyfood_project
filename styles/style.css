@@ -1,14 +1,67 @@
 /* GENERAL */
 
+:root {
+    --bg-color-grey: #F6F6F6;
+    --bg-color-footer: #353535;
+    --bg-color-midgrey: #EAEAEA;
+    --bg-color-white: white;
+}
 
 /* HEADER */
 
 .wrapper-logo-website {
     display: flex;
+    background-color: var(--bg-color-white);
 }
 
 /* MAIN */
 
+.main-grid {
+    display: grid;
+    grid-template-rows: 1fr 6fr 8fr 22fr;
+    grid-template-areas: "research-place"
+                         "explore-section"
+                         "function-section"
+                         "restaurant-section";
+}
 
+    /* RESEARCH PLACE */
+
+    .wrapper-place-bar {
+        background-color: var(--bg-color-midgrey);
+    }
+    
+    /* EXPLORE SECTION */
+
+    .wrapper-explore-section {
+        background-color: var(--bg-color-grey);
+    }
+
+    /* FUNCTION SECTION */
+
+    .wrapper-function-section {
+        display: grid;
+        grid-template-rows: auto 1fr 1fr 1fr;
+        background-color: var(--bg-color-white);
+    }
+
+    /* RESTAURANT SECTION */
+
+    .wrapper-restaurant {
+        display: grid;
+        grid-template-rows: auto 1fr 1fr 1fr 1fr;
+        background-color: var(--bg-color-grey);
+
+    }
 
 /* FOOTER */
+
+.footer-grid {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: "logo"
+                         "services"
+                         "policies";
+    background-color: var(--bg-color-footer);
+    
+}
