@@ -1,1 +1,4 @@
-@import ".base/base", "./utils/variables";
+@import "./utils/variables", "./utils/mixins";
+@import "./base/base";
+@import "./layouts/header", "./layouts/footer";
+@import "./components/research-place", "./components/explore-button"; 

@@ -10,8 +10,12 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
-a {
+a, a:hover, a:visited, a:active {
     text-decoration: none;
+}
+
+input:active, input:focus {
+    outline:none;
 }
 
 li {

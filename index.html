@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Site Ohmyfood! Paris - Commandez vos repas en ligne</title>
-    <link rel="stylesheet" type="text/css" href="styles/style.css" media="all">
+    <link rel="stylesheet" type="text/css" href="sass/main.css" media="all">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet"> 
@@ -16,7 +16,7 @@
 <body>
 
     <!-- HEADER OF WEBSITE -->
-    <header>
+    <header class="main__header">
         <h1 href="index.html">Ohmyfood</h1>
     </header>
 
@@ -26,33 +26,33 @@
         <!-- MAIN LAYOUT -->
         <div>
             <!-- RESEARCH PLACE SECTION -->
-            <section>
-                <form>
-                    <div>
-                        <i class="fas fa-map-marker-alt"></i> 
-                    </div>
-                    <input type="text" placeholder="Paris, Belleville">
-                </form>
+            <section class="main__research">
+                <span>
+                    <i class="fas fa-map-marker-alt"></i> 
+                </span>
+                <div class="main__research-text">
+                    <input type="text" name="searched-city" value="Paris, Belleville" placeholder="Votre ville">
+                </div>
             </section>
 
             <!-- EXPLORE RESTAURANT SECTION -->
             <section>
-                <h2>
+                <h3>
                     Réservez le menu qui vous convient
-                </h2>
+                </h3>
                 <p>Découvrez des restaurants d'exception, sélectionnés par nos soins.</p>
                 
                 <!-- EXPLORE BUTTON -->
-                <div>
-                    <a href="#restaurants-showroom">Explorer nos restaurants</a>
+                <div class="main__explore-button">
+                    <button href="#restaurants-showroom">Explorer nos restaurants</button>
                 </div>
             </section>
 
             <!-- FUNCTIONALITIES SECTION -->
             <section>
-                <h2>
+                <h3>
                     Fonctionnement
-                </h2>
+                </h3>
                 <article>
                     <div href="">
                         <div>
@@ -84,16 +84,16 @@
 
             <!-- RESTAURANTS SHOWROOM SECTION -->
             <section id="restaurants-showroom">
-                <h2 >
+                <h3>
                     Restaurants
-                </h2>
+                </h3>
 
                 <!-- RESTAURANT CARDS -->
                 <article>
                     <a href="menu-palette-gout.html">
                         <figure>
                             <img src="images/restaurants/palette-du-gout.jpg" alt="Photo du restaurant La palette du goût">
-                            <a>Nouveau</a>
+                            <div>Nouveau</div>
                         </figure>
                         <div>
                             <h3>La palette du goût</h3>
@@ -106,7 +106,7 @@
                     <a href="menu-note-enchantee.html">
                         <figure>
                             <img src="images/restaurants/note-enchantee.jpg" alt="Photo du restaurant La note enchantée">
-                            <a>Nouveau</a>
+                            <div>Nouveau</div>
                         </figure>
                         <div>
                             <h3>La note enchantée</h3>

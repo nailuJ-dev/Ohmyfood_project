@@ -1,8 +1,9 @@
-$primary-color: #9356DC;
-$secondary-color: #FF79DA;
-$tertiary-color: #99E2D0;
-$grey-color: #F6F6F6;
-$mid-grey-color: #EAEAEA;
+$color-primary: #9356DC;
+$color-secondary: #FF79DA;
+$color-tertiary: #99E2D0;
+$color-grey: #F6F6F6;
+$color-mid-grey: #EAEAEA;
 $footer-bg-color: #353535;
-$white-color: white;
-$title-font: 'Shrikhand', cursive;
+$color-white: white;
+$button-gradient: linear-gradient(1.45turn, $color-secondary, #e86edb, #cf64dc, #b35cdc, $color-primary);
+$font-logo:'Shrikhand', sans-serif;

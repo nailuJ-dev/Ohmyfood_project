@@ -1,0 +1,11 @@
+.main__research {
+    background: $color-mid-grey;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: inset 0px 3px 3px 0px #c0c0c0;
+}
+
+.main__research-text input {
+    @include main__research-loc;
+}
