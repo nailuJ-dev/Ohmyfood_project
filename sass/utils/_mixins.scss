@@ -8,6 +8,13 @@
     width: 150px;
   }
 
+  @mixin main__explore-section {
+      background-color: $color-grey;
+      text-align: center;
+      width: 100%;
+      padding: 20px 0;
+  }
+
   @mixin main__button-gradient {
     background-image: $button-gradient;
     border: none;

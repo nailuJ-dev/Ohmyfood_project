@@ -1,5 +1,6 @@
 .main__explore-button button {
     @include main__button-gradient;
+    margin: 5px 0 15px 0;
     &:hover {
         background-color: lighten($color-primary, 6%);
         background-blend-mode: lighten;
