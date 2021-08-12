@@ -8,14 +8,14 @@
     width: 150px;
   }
 
-  @mixin main__explore-section {
-      background-color: $color-grey;
-      text-align: center;
-      width: 100%;
-      padding: 20px 0;
-  }
+@mixin main__explore-section {
+    background-color: $color-grey;
+    text-align: center;
+    width: 100%;
+    padding: 20px 0;
+}
 
-  @mixin main__button-gradient {
+@mixin main__button-gradient {
     background-image: $button-gradient;
     border: none;
     border-radius: 30px;
@@ -24,5 +24,31 @@
     font-weight: bold;
     box-shadow: 4px 4px 16px #868686;
     cursor: pointer;
-  }
+}
 
+@mixin main__button-new-card {
+    color: #008766;
+    background: $color-tertiary;
+    border: 5px solid $color-tertiary;
+    border-radius: 5px;
+    position: absolute;
+    right: 1%;
+    top: 5%;
+}
+
+@mixin main__card-restaurant {
+    border-radius: 25px;
+    box-shadow: 4px 4px 6px rgb(148, 148, 148);
+    margin: 0 20px 0 20px;
+    position: relative;
+    background: #fff;
+}
+
+@mixin main__card-restaurant-img {
+    object-fit: cover;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    width: 100%;
+    height: 100%;
+    max-height: 220px;
+}
