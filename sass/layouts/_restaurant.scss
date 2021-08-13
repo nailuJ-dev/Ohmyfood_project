@@ -30,5 +30,16 @@
 }
 
 .card-restaurant-bottom-part {
-    @include main__card-flex-config
+    @include main__card-flex-config;
+    h3 {
+        margin: 10px 0 0 0;
+        color: black;
+    }
+    p {
+        margin: 5px 0 5px 0;
+        color: $color-dark-grey;
+    }
+    i {
+        @include heart;
+    }
 }

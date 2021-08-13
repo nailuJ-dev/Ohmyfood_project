@@ -50,10 +50,31 @@
     border-top-right-radius: 10px;
     width: 100%;
     height: 100%;
-    max-height: 225px;
+    max-height: 200px;
 }
 
 @mixin main__card-flex-config {
     display: flex;
     flex: 8 2 auto;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 30px 5px 20px;
+    color: black;
+}
+
+@mixin heart {
+    color: $color-dark-grey;
+    font-size: 18px;
+    font-weight: 100;
+    cursor: pointer;
+    &:hover {
+        animation: fill 0.4s ease-in-out;
+        display: inline-block;
+        opacity: 1;
+        background:linear-gradient(to bottom, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
+        background:-webkit-linear-gradient(to left, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color:transparent;
+        font-weight: bold;
+    }
 }
