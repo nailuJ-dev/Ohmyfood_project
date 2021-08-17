@@ -138,8 +138,8 @@ footer ul li a {
   cursor: pointer;
 }
 .card-restaurant-bottom-part i:hover {
-  -webkit-animation: fill 0.4s ease-in-out;
-          animation: fill 0.4s ease-in-out;
+  -webkit-animation: fill 0.45s ease-in-out;
+          animation: fill 0.45s ease-in-out;
   display: inline-block;
   opacity: 1;
   background: linear-gradient(to bottom, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
