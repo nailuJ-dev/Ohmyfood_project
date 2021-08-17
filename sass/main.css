@@ -150,6 +150,51 @@ footer ul li a {
   font-weight: bold;
 }
 
+.main__howto {
+  margin-bottom: 50px;
+}
+.main__howto h3 {
+  font-weight: bold;
+  font-size: 18px;
+  padding-top: 40px;
+  margin-left: 20px;
+  margin-top: 0;
+}
+.main__howto ol {
+  padding-left: 10px;
+}
+
+.main__howto-number {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #9356DC;
+  color: white;
+  border-radius: 50%;
+  border: 2px solid #9356DC;
+  position: relative;
+  padding: 5px 8px;
+  right: 15px;
+}
+
+.main__howto-button {
+  margin: 0 20px 20px 20px;
+  padding: 10px 0;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  background: #F6F6F6;
+  border: 5px solid #F6F6F6;
+  border-radius: 10px;
+  box-shadow: 4px 4px 6px #868686;
+  font-weight: bold;
+}
+.main__howto-button i {
+  margin: 0 20px 0 5px;
+  font-size: 15px;
+  color: #615f5f;
+}
+
 .main__research {
   background: #EAEAEA;
   display: flex;

@@ -1,0 +1,26 @@
+.main__howto {
+    margin-bottom: 50px;
+
+    h3 {
+    @include title-h3;
+    margin-top: 0;
+    }
+
+    ol {
+        padding-left: 10px;
+    }
+}
+
+.main__howto-number {
+    @include howto-number;
+}
+
+.main__howto-button {
+    @include howto-button;
+
+    i {
+        margin: 0 20px 0 5px;
+        font-size: 15px;
+        color: $color-dark-grey;
+    }
+}
