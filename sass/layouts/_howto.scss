@@ -6,9 +6,30 @@
     margin-top: 0;
     }
 
-    ol {
+    ul {
         padding-left: 10px;
+        @include responsive-width($res-tablet) {
+            display: grid;
+            grid-template-areas: "title . ."
+                                 "step1 step2 step3";
+        }
     }
+}
+
+.main__howto-title {
+    grid-area: title;
+}
+
+.main__howto-step1 {
+    grid-area: step1;
+}
+
+.main__howto-step2 {
+    grid-area: step2;
+}
+
+.main__howto-step3 {
+    grid-area: step3;
 }
 
 .main__howto-number {

@@ -33,3 +33,13 @@ footer {
 .fa-hands-helping {
     margin-right: 5px;
 }
+
+.responsive-footer {
+    @include responsive-width($res-tablet) {
+        display: flex;
+        flex: 1;
+        column-gap: 50px;
+        align-items: center;
+        justify-content: center;
+    }
+}
