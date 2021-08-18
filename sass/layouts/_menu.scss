@@ -1,0 +1,53 @@
+.header__menu-head {
+    align-self: center;
+
+    h1 {
+        font-family: $font-logo;
+        text-align: center;
+    }
+
+    a {
+        position: absolute;
+        top: 26px;
+        left: 24px;
+    }
+
+    i {
+        font-size: 15px;
+        color: black;
+    }
+}
+
+.header__menu-img {
+    max-width: 100%;
+    max-height: 400px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.main__menu-wrapper {
+    background-color: $color-grey;
+    border-radius: 24px 24px 0 0;
+    margin-top: -50px;
+    position: relative;
+
+}
+
+.main__menu-title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 15px 0 15px;
+
+    h2 {
+        font-family: $font-logo;
+    }
+
+    i {
+        @include heart;
+    }
+}
+
+.main__menu-restaurant {
+    
+}

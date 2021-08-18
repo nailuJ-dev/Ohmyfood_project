@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ohmyfood ! - Restaurant La palette du goût</title>
-    <link rel="stylesheet" type="text/css" href="sass/main.css" media="all">
+    <link rel="stylesheet" type="text/css" href="../sass/main.css" media="all">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet"> 
@@ -15,23 +15,21 @@
 <body>
     <header>
         <div class="main__header">
-            <a href="/index.html">
+            <a href="../index.html">
                 <i class="fas fa-arrow-left"></i>
             </a>
             <h1>ohmyfood</h1>
         </div>
     </header>
 
-    <img src="/images/restaurants/note-enchantee.jpg" alt="Photo d'un plat du restaurant La note enchantée">
+    <img src="../images/restaurants/note-enchantee.jpg" alt="Photo d'un plat du restaurant La note enchantée">
 
     <main>
         <section>
             <h2>La note enchantée</h2>
-            <button>
-                <i class="far fa-heart"></i>
-            </button>
+            <i class="far fa-heart"></i>
         </section>
-        <section>
+        <section class="main__menu-restaurant">
             <article>
                 <h3>Entrées</h3>
                 <div>
@@ -191,16 +189,16 @@
                     </div>
                 </div>
             </article>
+            <div class="main__explore-button">
+                <button>Commander</button>
+            </div>
         </section>
-        <div>
-            <button>Commander</button>
-        </div>
     </main>
 
     <footer>
         <nav>
-            <h3>ohmyfood</h3>
-            <ul>
+            <h3 class="responsive-footer">ohmyfood</h3>
+            <ul class="responsive-footer">
                 <li>
                     <a href="#">
                         <i class="fas fa-utensils"></i>

@@ -232,6 +232,66 @@ footer ul li a {
   color: #615f5f;
 }
 
+.header__menu-head {
+  align-self: center;
+}
+.header__menu-head h1 {
+  font-family: "Shrikhand", sans-serif;
+  text-align: center;
+}
+.header__menu-head a {
+  position: absolute;
+  top: 26px;
+  left: 24px;
+}
+.header__menu-head i {
+  font-size: 15px;
+  color: black;
+}
+
+.header__menu-img {
+  max-width: 100%;
+  max-height: 400px;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.main__menu-wrapper {
+  background-color: #F6F6F6;
+  border-radius: 24px 24px 0 0;
+  margin-top: -50px;
+  position: relative;
+}
+
+.main__menu-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 15px 0 15px;
+}
+.main__menu-title h2 {
+  font-family: "Shrikhand", sans-serif;
+}
+.main__menu-title i {
+  color: #615f5f;
+  font-size: 18px;
+  font-weight: 100;
+  cursor: pointer;
+}
+.main__menu-title i:hover {
+  -webkit-animation: fill 0.45s ease-in-out;
+          animation: fill 0.45s ease-in-out;
+  display: inline-block;
+  opacity: 1;
+  background: linear-gradient(to bottom, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
+  background: -webkit-linear-gradient(to left, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
+  -webkit-background-clip: text;
+          background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
+}
+
 .main__research {
   background: #EAEAEA;
   display: flex;
