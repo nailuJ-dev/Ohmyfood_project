@@ -26,7 +26,7 @@
 }
 
 .main__menu-wrapper {
-    background-color: $color-grey;
+    background-color: $color-mid-grey;
     border-radius: 24px 24px 0 0;
     margin-top: -50px;
     position: relative;
@@ -52,12 +52,58 @@
     display: grid;
     grid-template-rows: repeat(3, 1fr);
     row-gap: 18px;
-    padding-left: 15px;
+    padding: 0 15px;
 
     @include responsive-width($res-desktop) {
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: 1fr;
         grid-column-gap: 20px;
+    }
+
+    h3 {
+        text-transform: uppercase;
+        font-weight: 400;
+        margin: 0;
+    }
+
+    &-horizontal-bar {
+        border-top: 3px solid $color-tertiary;
+        width: 40px;
+        margin: 8px 0 0 0;
+    }
+}
+
+.main__menu-item {
+    background-color: $color-white;
+    padding: 15px 15px 18px 15px;
+    margin: 12px 0;
+    border-radius: 9px;
+    cursor: pointer;
+    @include shadow-menu-item;
+    @include manage-overflow-space;
+
+    &-title {
+        flex: 1;
+
+        h4 {
+            margin: 0;
+            padding-bottom: 4px;
+            font-size: 14px;
+            font-weight: bold;
+        }
+    }
+
+    &-text-price {
+        display: flex;
+        justify-content: space-between;
+        font-weight: 700;
+        padding-right: 24px;
+        font-weight: bold;
+        
+        p {
+            margin: 0;
+            font-weight: 500;
+        }
     }
 }
 
@@ -65,7 +111,7 @@
     display: flex;
     justify-content: center;
     padding: 35px 0;
-
+    
     button {
         @include main__button-gradient;
         &:hover {

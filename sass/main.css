@@ -113,7 +113,7 @@ footer ul li a {
   box-shadow: 4px 4px 6px #949494;
   margin: 0 20px 0 20px;
   position: relative;
-  background: #fff;
+  background: white;
 }
 
 .card-restaurant figure {
@@ -258,7 +258,7 @@ footer ul li a {
 }
 
 .main__menu-wrapper {
-  background-color: #F6F6F6;
+  background-color: #EAEAEA;
   border-radius: 24px 24px 0 0;
   margin-top: -50px;
   position: relative;
@@ -296,7 +296,7 @@ footer ul li a {
   display: grid;
   grid-template-rows: repeat(3, 1fr);
   row-gap: 18px;
-  padding-left: 15px;
+  padding: 0 15px;
 }
 @media (min-width: 1080px) {
   .main__menu-restaurant {
@@ -304,6 +304,48 @@ footer ul li a {
     grid-template-rows: 1fr;
     grid-column-gap: 20px;
   }
+}
+.main__menu-restaurant h3 {
+  text-transform: uppercase;
+  font-weight: 400;
+  margin: 0;
+}
+.main__menu-restaurant-horizontal-bar {
+  border-top: 3px solid #99E2D0;
+  width: 40px;
+  margin: 8px 0 0 0;
+}
+
+.main__menu-item {
+  background-color: white;
+  padding: 15px 15px 18px 15px;
+  margin: 12px 0;
+  border-radius: 9px;
+  cursor: pointer;
+  box-shadow: 3px 3px 12px #868686;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.main__menu-item-title {
+  flex: 1;
+}
+.main__menu-item-title h4 {
+  margin: 0;
+  padding-bottom: 4px;
+  font-size: 14px;
+  font-weight: bold;
+}
+.main__menu-item-text-price {
+  display: flex;
+  justify-content: space-between;
+  font-weight: 700;
+  padding-right: 24px;
+  font-weight: bold;
+}
+.main__menu-item-text-price p {
+  margin: 0;
+  font-weight: 500;
 }
 
 .main__menu-buy-button {
