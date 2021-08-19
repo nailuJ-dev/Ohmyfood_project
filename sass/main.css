@@ -318,17 +318,12 @@ footer ul li a {
 
 .main__menu-item {
   background-color: white;
-  padding: 15px 15px 18px 15px;
-  margin: 12px 0;
+  padding: 15px;
+  margin: 16px 0;
   border-radius: 9px;
   cursor: pointer;
-  box-shadow: 3px 3px 12px #868686;
-  white-space: nowrap;
-  text-overflow: ellipsis;
   overflow: hidden;
-}
-.main__menu-item-title {
-  flex: 1;
+  box-shadow: 3px 3px 12px #868686;
 }
 .main__menu-item-title h4 {
   margin: 0;
@@ -338,14 +333,37 @@ footer ul li a {
 }
 .main__menu-item-text-price {
   display: flex;
+  flex-wrap: nowrap;
   justify-content: space-between;
   font-weight: 700;
   padding-right: 24px;
   font-weight: bold;
+  overflow: hidden;
 }
-.main__menu-item-text-price p {
+.main__menu-item-text-price span {
   margin: 0;
   font-weight: 500;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.main__menu-item-animation {
+  visibility: hidden;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #99E2D0;
+  border-radius: 0 9px 9px 0;
+  color: white;
+  font-size: 20px;
+  transform-origin: right;
+  width: 20%;
+  left: 100%;
+}
+.main__menu-item:hover > .main__menu-item-animation {
+  visibility: visible;
+  transition: all 0.5s ease-in;
+  transform: translateX(-100%);
 }
 
 .main__menu-buy-button {

@@ -75,16 +75,14 @@
 
 .main__menu-item {
     background-color: $color-white;
-    padding: 15px 15px 18px 15px;
-    margin: 12px 0;
+    padding: 15px;
+    margin: 16px 0;
     border-radius: 9px;
     cursor: pointer;
+    overflow: hidden;
     @include shadow-menu-item;
-    @include manage-overflow-space;
 
     &-title {
-        flex: 1;
-
         h4 {
             margin: 0;
             padding-bottom: 4px;
@@ -95,15 +93,40 @@
 
     &-text-price {
         display: flex;
+        flex-wrap: nowrap;
         justify-content: space-between;
         font-weight: 700;
         padding-right: 24px;
         font-weight: bold;
+        overflow: hidden;
         
-        p {
+        span {
             margin: 0;
             font-weight: 500;
+            overflow: hidden;
+            text-overflow: ellipsis;
         }
+    }
+
+    &-animation {
+        visibility: hidden;
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: $color-tertiary;
+        border-radius: 0 9px 9px 0;
+        color: $color-white;
+        font-size: 20px;
+        transform-origin: right;
+        width: 20%;
+        left: 100%;
+    }
+
+    &:hover > .main__menu-item-animation {
+        visibility: visible;
+        transition: all 0.5s ease-in;
+        transform: translateX(-100%);
     }
 }
 

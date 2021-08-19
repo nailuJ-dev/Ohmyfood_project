@@ -116,14 +116,13 @@
     margin-left: 20px;
 }
 
+@mixin manage-overflow {
+    white-space: nowrap; 
+    overflow: hidden;
+}
+
 @mixin responsive-width($res) {
     @media (min-width: + $res) {
         @content
     }
-}
-
-@mixin manage-overflow-space {
-    white-space: nowrap;
-    text-overflow: ellipsis;
-    overflow: hidden;
 }
