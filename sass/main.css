@@ -295,7 +295,7 @@ footer ul li a {
 
 .main__menu-restaurant {
   display: grid;
-  grid-template-rows: repeat(3, 1fr);
+  grid-template-rows: repeat(3, auto);
   row-gap: 18px;
   padding: 0 15px;
 }
