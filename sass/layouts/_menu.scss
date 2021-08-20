@@ -87,8 +87,6 @@
     &-description {
         display: flex;
         align-items: flex-start;
-        padding-right: 15px;
-        overflow: hidden;
     }
 
     &-flex-child1 {
@@ -110,7 +108,6 @@
     &-flex-child2 {
         flex-grow: 1;
         min-width: 0;
-        flex-direction: row;
 
         span {
             overflow: hidden;
@@ -123,6 +120,7 @@
     &-price {
         font-weight: bolder;
         align-items: flex-end;
+        padding-right: 15px;
     }
 
     &-animation {
