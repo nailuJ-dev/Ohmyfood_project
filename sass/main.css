@@ -5,7 +5,7 @@
 body {
   margin: 0;
   padding: 0;
-  font-size: 12px;
+  font-size: 13px;
   font-family: "Roboto", sans-serif;
 }
 
@@ -260,8 +260,9 @@ footer ul li a {
 .main__menu-wrapper {
   background-color: #EAEAEA;
   border-radius: 24px 24px 0 0;
-  margin-top: -50px;
   position: relative;
+  max-width: 1200px;
+  margin: -50px auto auto auto;
 }
 
 .main__menu-title {
@@ -318,52 +319,71 @@ footer ul li a {
 
 .main__menu-item {
   background-color: white;
-  padding: 15px;
   margin: 16px 0;
   border-radius: 9px;
   cursor: pointer;
-  overflow: hidden;
   box-shadow: 3px 3px 12px #868686;
+  display: flex;
+  flex: 1;
+  height: 70px;
+  overflow: hidden;
 }
-.main__menu-item-title h4 {
+.main__menu-item-description {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  padding-right: 15px;
+}
+.main__menu-item-flex-child1 {
+  flex-grow: 1;
+  min-width: 0;
+  padding: 15px 0 15px 15px;
+}
+.main__menu-item-flex-child1 h4 {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
   margin: 0;
   padding-bottom: 4px;
-  font-size: 14px;
-  font-weight: bold;
+  font-size: 15px;
+  font-weight: 1000;
 }
-.main__menu-item-text-price {
-  display: flex;
-  flex-wrap: nowrap;
-  justify-content: space-between;
-  font-weight: 700;
-  padding-right: 24px;
-  font-weight: bold;
-  overflow: hidden;
+.main__menu-item-flex-child2 {
+  flex-grow: 1;
+  min-width: 0;
 }
-.main__menu-item-text-price span {
-  margin: 0;
-  font-weight: 500;
+.main__menu-item-flex-child2 span {
+  white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+  margin: 0;
+  font-weight: 500;
+}
+.main__menu-item-price {
+  font-weight: bolder;
 }
 .main__menu-item-animation {
-  visibility: hidden;
-  position: absolute;
   display: flex;
+  position: relative;
   justify-content: center;
   align-items: center;
   background-color: #99E2D0;
   border-radius: 0 9px 9px 0;
   color: white;
   font-size: 20px;
-  transform-origin: right;
-  width: 20%;
-  left: 100%;
+  width: 0px;
+  height: 100%;
+  transition: width 0.6s;
 }
 .main__menu-item:hover > .main__menu-item-animation {
-  visibility: visible;
-  transition: all 0.5s ease-in;
-  transform: translateX(-100%);
+  width: 70px;
+}
+.main__menu-item-wrapper-icon {
+  transform: rotate(180deg);
+  transition-duration: 0.4s;
+}
+.main__menu-item:hover .main__menu-item-animation > .main__menu-item-wrapper-icon {
+  transform: rotate(0deg);
 }
 
 .main__menu-buy-button {
