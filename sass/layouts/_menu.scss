@@ -81,15 +81,14 @@
     cursor: pointer;
     @include shadow-menu-item;
     display: flex;
-    flex: 1;
     height: 70px;
     overflow: hidden;
 
     &-description {
         display: flex;
-        width: 100%;
-        justify-content: space-between;
+        align-items: flex-start;
         padding-right: 15px;
+        overflow: hidden;
     }
 
     &-flex-child1 {
@@ -111,18 +110,19 @@
     &-flex-child2 {
         flex-grow: 1;
         min-width: 0;
+        flex-direction: row;
 
         span {
-            white-space: nowrap;
             overflow: hidden;
             text-overflow: ellipsis;
-            margin: 0;
+            white-space: nowrap;
             font-weight: 500;
         }
     }
 
     &-price {
         font-weight: bolder;
+        align-items: flex-end;
     }
 
     &-animation {

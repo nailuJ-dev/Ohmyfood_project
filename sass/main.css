@@ -324,15 +324,14 @@ footer ul li a {
   cursor: pointer;
   box-shadow: 3px 3px 12px #868686;
   display: flex;
-  flex: 1;
   height: 70px;
   overflow: hidden;
 }
 .main__menu-item-description {
   display: flex;
-  width: 100%;
-  justify-content: space-between;
+  align-items: flex-start;
   padding-right: 15px;
+  overflow: hidden;
 }
 .main__menu-item-flex-child1 {
   flex-grow: 1;
@@ -351,16 +350,17 @@ footer ul li a {
 .main__menu-item-flex-child2 {
   flex-grow: 1;
   min-width: 0;
+  flex-direction: row;
 }
 .main__menu-item-flex-child2 span {
-  white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  margin: 0;
+  white-space: nowrap;
   font-weight: 500;
 }
 .main__menu-item-price {
   font-weight: bolder;
+  align-items: flex-end;
 }
 .main__menu-item-animation {
   display: flex;
