@@ -1,0 +1,55 @@
+.loader {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.90);
+    animation: loader 0.1s;
+    -webkit-animation: loader 0.1s;
+    animation-delay: 4s;
+    animation-fill-mode: both;
+    z-index: 99;
+
+    &-box {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: 40vh;
+        right: 45vw;
+
+        @include responsive-width($res-tablet) {
+            right: 48.5vw;
+            top: 20vh;
+        }
+    }
+
+    &-object {
+        display: inline-block;
+        animation: expand 1s ease-in-out infinite ;
+        -webkit-animation: expand 1s ease-in-out infinite ;
+        transform-origin: center center;
+        border-radius: 10px;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        -ms-border-radius: 10px;
+        -o-border-radius: 10px;
+        margin: 0 6px;
+        width: 3px;
+        height: 50px;
+        z-index: 100;
+
+        &:nth-child(1) {
+            background: $color-primary;
+        }
+
+        &:nth-child(2) {
+            animation-delay: 180ms;
+            background: $color-secondary;
+        }
+
+        &:nth-child(3) {
+            animation-delay: 360ms;
+            background: $color-tertiary;
+        }
+    }
+}
