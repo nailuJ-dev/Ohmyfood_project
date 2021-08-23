@@ -86,7 +86,7 @@
 
     &-description {
         display: flex;
-        align-items: flex-start;
+        justify-content: space-between;
     }
 
     &-flex-child1 {
@@ -118,7 +118,6 @@
 
     &-price {
         font-weight: bolder;
-        align-items: flex-end;
         padding-right: 15px;
     }
 

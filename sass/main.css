@@ -328,7 +328,7 @@ footer ul li a {
 }
 .main__menu-item-description {
   display: flex;
-  align-items: flex-start;
+  justify-content: space-between;
 }
 .main__menu-item-flex-child1 {
   flex: 1;
@@ -355,7 +355,6 @@ footer ul li a {
 }
 .main__menu-item-price {
   font-weight: bolder;
-  align-items: flex-end;
   padding-right: 15px;
 }
 .main__menu-item-animation {
