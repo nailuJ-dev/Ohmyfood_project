@@ -81,6 +81,8 @@
     cursor: pointer;
     @include shadow-menu-item;
     display: flex;
+    max-width: 536px;
+    min-width: 0;
     height: 70px;
     overflow: hidden;
 
@@ -91,8 +93,13 @@
 
     &-flex-child1 {
         flex: 1;
-        min-width: 0;
+        min-width: 200px;
         padding: 15px 0 15px 15px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: inline-block;
+        inline-size: 10px;
 
         h4 {
             overflow: hidden;
@@ -106,19 +113,21 @@
 
     &-flex-child2 {
         flex: 1;
-        min-width: 0;
+        min-width: 10px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: inline-block;
+        inline-size: 10px;
 
         span {
-            white-space: nowrap;
-            overflow: hidden;
-            text-overflow: ellipsis;
             font-weight: 500;
         }
     }
 
     &-price {
         font-weight: bolder;
-        padding-right: 15px;
+        padding: 0 15px 0 6px;
     }
 
     &-animation {

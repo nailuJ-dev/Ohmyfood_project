@@ -323,6 +323,8 @@ footer ul li a {
   cursor: pointer;
   box-shadow: 3px 3px 12px #868686;
   display: flex;
+  max-width: 536px;
+  min-width: 0;
   height: 70px;
   overflow: hidden;
 }
@@ -332,8 +334,13 @@ footer ul li a {
 }
 .main__menu-item-flex-child1 {
   flex: 1;
-  min-width: 0;
+  min-width: 200px;
   padding: 15px 0 15px 15px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: inline-block;
+  inline-size: 10px;
 }
 .main__menu-item-flex-child1 h4 {
   overflow: hidden;
@@ -345,17 +352,19 @@ footer ul li a {
 }
 .main__menu-item-flex-child2 {
   flex: 1;
-  min-width: 0;
-}
-.main__menu-item-flex-child2 span {
+  min-width: 10px;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+  display: inline-block;
+  inline-size: 10px;
+}
+.main__menu-item-flex-child2 span {
   font-weight: 500;
 }
 .main__menu-item-price {
   font-weight: bolder;
-  padding-right: 15px;
+  padding: 0 15px 0 6px;
 }
 .main__menu-item-animation {
   display: flex;
