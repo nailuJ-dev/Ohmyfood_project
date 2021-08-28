@@ -22,4 +22,4 @@ Third project of the Openclassroom web developer course. The main goal of this p
   - Tools : Visual Studio Code with Sass watch / Live Server / Emmet / Autoprefixer / BEM Methodology / Github and its terminal Gitbash
   - Mobile-first approach is used
   - Compatibility with Google Chrome and Firefox is required
-  - The code has been versioned on GIT and deployed on GITHUB at the following address https://
+  - The code has been versioned on GIT and deployed on GITHUB at the following address https://nailuj-dev.github.io/JulianBuzare_3_09082021/
