@@ -258,7 +258,7 @@ footer ul li a {
   box-shadow: 4px 4px 6px #868686;
   font-weight: bold;
   background-color: #F5EDFF;
-  border: 5px solid #F5EDFF;
+  border-color: #F5EDFF;
 }
 
 .header__menu-head {
