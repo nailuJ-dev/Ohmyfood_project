@@ -32,16 +32,38 @@
     grid-area: step3;
 }
 
+.main__howto-fav1 {
+    margin: 0 20px 0 9px;
+    color: $color-dark-grey;
+    font-size: 15px;
+}
+
+.main__howto-fav2 {
+    margin: 0 20px 0 5px;
+    font-size: 15px;
+}
+
+.main__howto-fav3 {
+    color: $color-primary;
+    margin: 0 20px 0 5px;
+    font-size: 15px;
+}
+
+.main__howto-fav {
+    color: $color-dark-grey;
+}
+
 .main__howto-number {
     @include howto-number;
 }
 
 .main__howto-button {
     @include howto-button;
+    background: $color-grey;
+}
 
-    i {
-        margin: 0 20px 0 5px;
-        font-size: 15px;
-        color: $color-dark-grey;
-    }
+.main__howto-button3 {
+    @include howto-button;
+    background-color: #F5EDFF;
+    border: 5px solid #F5EDFF;
 }
