@@ -29,10 +29,11 @@
     background-color: $color-mid-grey;
     border-radius: 24px 24px 0 0;
     position: relative;
+    width: 100%;
     max-width: 1200px;
     margin: -50px auto auto auto;
-
 }
+
 
 .main__menu-title {
     display: flex;
@@ -72,6 +73,12 @@
         width: 40px;
         margin: 8px 0 0 0;
     }
+}
+
+.gradient-horizontal-bar {
+    color: $color-mid-grey;
+    background-image: linear-gradient(to bottom, rgba(234,234,234,1), rgba(234, 234, 234, 0.836), rgba(234, 234, 234, 0.658), rgba(234, 234, 234, 0.432));
+    height: 10px;
 }
 
 .main__menu-item {
@@ -149,7 +156,7 @@
     }
 }
 
-#sticky-element {
+.sticky-element {
     position: sticky;
     top: 0;
     background-color: $color-mid-grey;
@@ -169,5 +176,11 @@
             background-blend-mode: lighten;
             box-shadow: 3px 3px 16px rgb(100, 100, 100);
         }
+    }
+}
+@media screen and (max-width: $res-desktop) {
+    .menu-scroll {
+        overflow: scroll;
+        max-height: 28vh;
     }
 }
