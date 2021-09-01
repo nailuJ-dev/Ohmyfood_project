@@ -157,7 +157,7 @@ footer ul li a {
   display: inline-block;
   opacity: 1;
   background: linear-gradient(to bottom, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
-  background: -webkit-linear-gradient(to left, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
+  background: -webkit-linear-gradient(to bottom, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
   -webkit-background-clip: text;
           background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -200,6 +200,27 @@ footer ul li a {
   grid-area: step3;
 }
 
+.main__howto-fav1 {
+  margin: 0 20px 0 9px;
+  color: #615f5f;
+  font-size: 15px;
+}
+
+.main__howto-fav2 {
+  margin: 0 20px 0 5px;
+  font-size: 15px;
+}
+
+.main__howto-fav3 {
+  color: #9356DC;
+  margin: 0 20px 0 5px;
+  font-size: 15px;
+}
+
+.main__howto-fav {
+  color: #615f5f;
+}
+
 .main__howto-number {
   display: flex;
   justify-content: center;
@@ -219,16 +240,25 @@ footer ul li a {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  background: #F6F6F6;
   border: 5px solid #F6F6F6;
   border-radius: 10px;
   box-shadow: 4px 4px 6px #868686;
   font-weight: bold;
+  background: #F6F6F6;
 }
-.main__howto-button i {
-  margin: 0 20px 0 5px;
-  font-size: 15px;
-  color: #615f5f;
+
+.main__howto-button3 {
+  margin: 0 20px 20px 20px;
+  padding: 10px 0;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  border: 5px solid #F6F6F6;
+  border-radius: 10px;
+  box-shadow: 4px 4px 6px #868686;
+  font-weight: bold;
+  background-color: #F5EDFF;
+  border: 5px solid #F5EDFF;
 }
 
 .header__menu-head {
@@ -285,7 +315,7 @@ footer ul li a {
   display: inline-block;
   opacity: 1;
   background: linear-gradient(to bottom, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
-  background: -webkit-linear-gradient(to left, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
+  background: -webkit-linear-gradient(to bottom, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
   -webkit-background-clip: text;
           background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -323,7 +353,6 @@ footer ul li a {
   cursor: pointer;
   box-shadow: 3px 3px 12px #868686;
   display: flex;
-  max-width: 536px;
   min-width: 0;
   height: 70px;
   overflow: hidden;
@@ -411,7 +440,8 @@ footer ul li a {
 }
 
 .loader {
-  position: absolute;
+  position: fixed;
+  top: 0;
   height: 100%;
   width: 100%;
   background-color: rgba(255, 255, 255, 0.9);
@@ -518,23 +548,39 @@ footer ul li a {
 
 @-webkit-keyframes fadein {
   from {
-    transform: translateX(30px);
+    transform: translateY(40px);
     opacity: 0;
+    -webkit-transform: translateY(40px);
+    -moz-transform: translateY(40px);
+    -ms-transform: translateY(40px);
+    -o-transform: translateY(40px);
   }
   to {
-    transform: translateX(0);
+    transform: translateY(0);
     opacity: 1;
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
   }
 }
 
 @keyframes fadein {
   from {
-    transform: translateX(30px);
+    transform: translateY(40px);
     opacity: 0;
+    -webkit-transform: translateY(40px);
+    -moz-transform: translateY(40px);
+    -ms-transform: translateY(40px);
+    -o-transform: translateY(40px);
   }
   to {
-    transform: translateX(0);
+    transform: translateY(0);
     opacity: 1;
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
   }
 }
 .appear-delay-0 {
