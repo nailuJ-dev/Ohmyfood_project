@@ -253,12 +253,11 @@ footer ul li a {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  border: 5px solid #F6F6F6;
+  border: 5px solid #F5EDFF;
   border-radius: 10px;
   box-shadow: 4px 4px 6px #868686;
   font-weight: bold;
   background-color: #F5EDFF;
-  border-color: #F5EDFF;
 }
 
 .header__menu-head {
