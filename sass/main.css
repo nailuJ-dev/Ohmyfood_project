@@ -318,9 +318,12 @@ footer ul li a {
 }
 
 .gradient-horizontal-bar {
-  color: #EAEAEA;
-  background-image: linear-gradient(to bottom, #eaeaea, rgba(234, 234, 234, 0.836), rgba(234, 234, 234, 0.658), rgba(234, 234, 234, 0.432));
   height: 10px;
+  background-color: #EAEAEA;
+}
+.gradient-horizontal-bar::after {
+  height: 5px;
+  background: linear-gradient(to bottom, #eaeaea, rgba(95, 56, 56, 0.5));
 }
 
 .main__menu-item {

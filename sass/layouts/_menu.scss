@@ -76,9 +76,13 @@
 }
 
 .gradient-horizontal-bar {
-    color: $color-mid-grey;
-    background-image: linear-gradient(to bottom, rgba(234,234,234,1), rgba(234, 234, 234, 0.836), rgba(234, 234, 234, 0.658), rgba(234, 234, 234, 0.432));
     height: 10px;
+    background-color: $color-mid-grey;
+
+    &::after {
+        height: 5px;
+        background: linear-gradient(to bottom, rgba(234,234,234,1), rgba(95, 56, 56, 0.5));
+    }
 }
 
 .main__menu-item {
