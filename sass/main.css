@@ -348,9 +348,9 @@ footer ul li a {
 }
 
 .gradient-horizontal-bar {
-  color: #EAEAEA;
-  background-image: linear-gradient(to bottom, #eaeaea, rgba(234, 234, 234, 0.836), rgba(234, 234, 234, 0.658), rgba(234, 234, 234, 0.432));
-  background-image: -webkit-linear-gradient(to bottom, #eaeaea, rgba(234, 234, 234, 0.836), rgba(234, 234, 234, 0.658), rgba(234, 234, 234, 0.432));
+  color: transparent;
+  background: linear-gradient(180deg, #eaeaea 0%, #eaeaea 35%, rgba(234, 234, 234, 0) 100%);
+  min-height: 10px;
   height: 10px;
 }
 
