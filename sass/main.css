@@ -159,7 +159,6 @@ footer ul li a {
   background: linear-gradient(to bottom, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
   background: -webkit-linear-gradient(to bottom, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
   -webkit-background-clip: text;
-          background-clip: text;
   -webkit-text-fill-color: transparent;
   font-weight: bold;
 }
@@ -318,7 +317,6 @@ footer ul li a {
   background: linear-gradient(to bottom, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
   background: -webkit-linear-gradient(to bottom, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
   -webkit-background-clip: text;
-          background-clip: text;
   -webkit-text-fill-color: transparent;
   font-weight: bold;
 }
