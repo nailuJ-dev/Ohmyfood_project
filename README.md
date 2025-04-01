@@ -1,5 +1,5 @@
 # Ohmyfood Project
-Third project of the Openclassroom web developer course. The main goal of this project is to create a website to compose and order your meals online. To do this, it's necessary to integrate and dynamize the web pages with CSS animations using Sass preprocessor.
+The main goal of this project is to create a website to compose and order your meals online. To do this, it's necessary to integrate and dynamize the web pages with CSS animations using Sass preprocessor.
 
 ![Accueil](https://user-images.githubusercontent.com/78428426/131095300-68a95a20-c32c-4f9f-9826-34373c71d8aa.png) ![Menu - À la française](https://user-images.githubusercontent.com/78428426/131095311-3e91f78d-e568-4919-a4d3-9ba5e4dc3963.png)
 
